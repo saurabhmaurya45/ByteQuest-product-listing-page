@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Encode+Sans:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +18,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: "encoded sans", sans-serif !important;
+  letter-spacing: 2px !important;
+  line-height: 16.25px;
+  font-weight: 1 !important;
+  color: "#E5DFD9" !important;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +35,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
+
