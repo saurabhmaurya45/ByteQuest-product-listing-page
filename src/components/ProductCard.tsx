@@ -3,8 +3,14 @@ import Image from "next/image";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { IoBookmarkOutline } from "react-icons/io5";
 import cartIcon from "../assets/Group 450.png";
+import { Product } from "./interface/productInterface";
 
-const ProductCard = ({ product }) => {
+
+interface ProductCardProps {
+  product: Product;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <>
       <div

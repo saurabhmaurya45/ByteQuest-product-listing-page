@@ -1,20 +1,11 @@
 import React from "react";
+import axios from "axios";
+import Link from "next/link";
 import { GoDotFill } from "react-icons/go";
 import { FiShare } from "react-icons/fi";
 import ProductCard from "./ProductCard";
-import Link from "next/link";
-import axios from "axios";
+import { Product } from "./interface/productInterface";
 
-// Define the shape of the product data
-interface Product {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  category: string;
-  image: string;
-  rating: { rate: number; count: number };
-}
 
 export async function getProductData() {
   try {
