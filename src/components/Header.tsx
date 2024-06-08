@@ -9,29 +9,29 @@ import cartIcon from "../assets/Frame 54.png";
 
 const navbarData = [
   {
-    id:1,
+    id: 1,
     url: "#",
-    description: "Bags"
+    description: "Bags",
   },
   {
-    id:2,
+    id: 2,
     url: "#",
-    description: "Travel"
+    description: "Travel",
   },
   {
-    id:3,
+    id: 3,
     url: "#",
-    description: "Accessories"
+    description: "Accessories",
   },
   {
-    id:4,
+    id: 4,
     url: "#",
-    description: "Gifting"
+    description: "Gifting",
   },
   {
-    id:5,
+    id: 5,
     url: "#",
-    description: "Jewelery"
+    description: "Jewelery",
   },
 ];
 
@@ -64,9 +64,11 @@ const Header = () => {
       </div>
       <nav className="w-full flex justify-center items-center p-2 text-[#E5DFD9]">
         <ul className="w-full justify-center flex gap-5 text-sm">
-          {
-            navbarData.map((nav)=><Link href={nav.url} key={nav.id}><li>{nav.description}</li></Link>)
-          }
+          {navbarData.map((nav) => (
+            <Link href={nav.url} key={nav.id}>
+              <li>{nav.description}</li>
+            </Link>
+          ))}
         </ul>
       </nav>
     </header>

@@ -4,7 +4,6 @@ import { FaIndianRupeeSign } from "react-icons/fa6";
 import { IoBookmarkOutline } from "react-icons/io5";
 import cartIcon from "../assets/Group 450.png";
 
-
 const ProductCard = ({ product }) => {
   return (
     <>
@@ -15,13 +14,13 @@ const ProductCard = ({ product }) => {
         <div className="image w-[280px] h-[374px] overflow-hidden relative">
           <div className=" absolute top-4 right-4 text-black text-4xl ">
             {/* <Image src={bookmarkIcon} alt="bookmark" className="" /> */}
-            <IoBookmarkOutline/>
+            <IoBookmarkOutline />
           </div>
           <img
             src={product.image}
             alt={product.title}
             className="w-full h-full object-cover "
-            style={{borderRadius:"10px 10px 0px 0px "}}
+            style={{ borderRadius: "10px 10px 0px 0px " }}
           />
         </div>
         <div className="info p-2 py-5 bg-[#141414] text-white relative">

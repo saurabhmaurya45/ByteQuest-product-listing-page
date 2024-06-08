@@ -20,9 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="w-auto  px-6 md:px-12 lg:px-24 bg-[#0C0C0C] text-white relative">
           <Header />
-          <div className="pt-[105px]">
-            {children}
-          </div>
+          <div className="pt-[105px]">{children}</div>
         </div>
       </body>
     </html>
